@@ -1,6 +1,14 @@
 function addInCartMessage(title, price) {
     let productName = title;
     let productPrice = price;
+    let massage = productName;
+    massage = massage + " ";
+    massage = massage + "за";
+    massage = massage + " ";
+    massage = massage + productPrice;
+    massage = massage + " ";
+    massage = massage + "теперь в корзине!";
+    console.log (massage);
 
     // Задание №1.1. Оповещение о добавлении в корзину
 
@@ -16,7 +24,9 @@ function addInCartMessage(title, price) {
 
     // Конец решения задания №1.1.
 
-    return message;
+
+
+
 }
 
 function addInCartCountChange(value) {
@@ -30,7 +40,9 @@ function addInCartCountChange(value) {
 
     // Конец решения задания №1.2.
 
-    return newValue;
+    let newValue = oldValue;
+    newValue = newValue + "1";
+
 }
 
 function addInCartSumChange(sum, delta) {
@@ -45,6 +57,7 @@ function addInCartSumChange(sum, delta) {
 
     // Конец решения задания №1.3.
 
-    return newSumText;
+    let newSum = oldSum + difference;
+    let newSumText = newSum + ' ₽';
+    newSumText = `${newSum} ₽`;
 }
-
