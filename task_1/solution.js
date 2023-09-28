@@ -1,14 +1,14 @@
 function addInCartMessage(title, price) {
     let productName = title;
     let productPrice = price;
-    let massage = productName;
-    massage = massage + " ";
-    massage = massage + "за";
-    massage = massage + " ";
-    massage = massage + productPrice;
-    massage = massage + " ";
-    massage = massage + "теперь в корзине!";
-    console.log(massage);
+    let message = productName;
+    message = message + " ";
+    message = message + "за";
+    message = message + " ";
+    message = message + productPrice;
+    message = message + " ";
+    message = message + "теперь в корзине!";
+    console.log(message);
 
     // Задание №1.1. Оповещение о добавлении в корзину
 
@@ -32,7 +32,7 @@ function addInCartCountChange(value) {
     // Задание №1.2. Увеличение количества в корзине
     let oldValue = value;
     let newValue = oldValue;
-    newValue = newValue + Number("1");
+    newValue = newValue + 1;
 
     // создайте переменную newValue
     // присвойте ей значение oldValue
